@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Simple Pizza</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/pizza.js"></script>
+</head>
+<body>
+<h1>Simple Pizza</h1>
+Please, choose your pizza.
+<br/><br/>
+<div class="table">
+	<div class="table-row">
+		<div class="table-cell main-cell">
+			<h3>Predefined pizza:</h3>
+			<select id="predefined">
+				<option value="own">Create your own</option>
+				<option value="americana">Americana</option>
+				<option value="carbonara">Carbonara</option>
+				<option value="veggie">Veggie</option>
+			</select>
+		</div>
+		
+		<div class="table-cell main-cell">
+			<h3>Create your own:</h3>
+			<span class="label">Ingredients:</span>
+			<br/><input type="checkbox" class="ingredient" id="ingr-bacon" title="Bacon"> Bacon
+			<br/><input type="checkbox" class="ingredient" id="ingr-ham" title="Ham"> Ham
+			<br/><input type="checkbox" class="ingredient" id="ingr-beef" title="Beef"> Beef
+			<br/><input type="checkbox" class="ingredient" id="ingr-chicken" title="Chicken"> Chicken
+			<br/><input type="checkbox" class="ingredient" id="ingr-tuna" title="Tuna"> Tuna
+			<br/><input type="checkbox" class="ingredient" id="ingr-sausages" title="Bavarian sausages"> Bavarian sausages
+			<br/><input type="checkbox" class="ingredient" id="ingr-pepperoni" title="Pepperoni"> Pepperoni
+			<br/><input type="checkbox" class="ingredient" id="ingr-mozzarella" title="Mozzarella"> Mozzarella
+			<br/><input type="checkbox" class="ingredient" id="ingr-feta" title="Feta"> Feta
+			<br/><input type="checkbox" class="ingredient" id="ingr-parmesan" title="Parmesan"> Parmesan
+			<br/><input type="checkbox" class="ingredient" id="ingr-pineapple" title="Pineapple"> Pineapple
+			<br/><input type="checkbox" class="ingredient" id="ingr-corn" title="Corn"> Corn
+			<br/><input type="checkbox" class="ingredient" id="ingr-onion" title="Onion"> Onion
+			<br/><input type="checkbox" class="ingredient" id="ingr-pepper" title="Green pepper"> Green pepper
+			<br/><input type="checkbox" class="ingredient" id="ingr-mashrooms" title="Mashrooms"> Mashrooms
+			<br/><input type="checkbox" class="ingredient" id="ingr-tomatoes" title="Tomatoes"> Tomatoes
+			<br/><input type="checkbox" class="ingredient" id="ingr-olives" title="Olives"> Olives
+			<br/><input type="checkbox" class="ingredient" id="ingr-oregano" title="Oregano"> Oregano
+
+			<br/><br/><span class="label">Size:</span>
+			<select id="size">
+				<option value="22">22 cm</option>
+				<option value="30">30 cm</option>
+				<option value="36">36 cm</option>
+			</select>
+			<br/><br/><span class="label">Cheeze:</span>
+			<br/><input type="radio" name="cheeze" value="Standard" checked="checked"/>Standard
+			<br/><input type="radio" name="cheeze" value="Double" />Double
+		</div>
+	</div>
+</div>
+
+<br/><br/><button id="btn-order" class="ui-button">Make an order</button>
+<div id="result"></div>
+</body>
+</html>
